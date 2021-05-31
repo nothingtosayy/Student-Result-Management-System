@@ -1,0 +1,7 @@
+To check my code whether it is working or not.
+-> In Registration page u may enter your own Details.
+-> After Registering yourself, navigate to login page and get logged in yourself.
+-> After logging in, Click on Search in home page.
+-> you will be able to see a form with two inputs. it asks you to enter name and semester.
+-> Enter name = Micheal and semester = 6th and press Search.
+-> you will navigate to a result page having the marks result of the name you have entered.
