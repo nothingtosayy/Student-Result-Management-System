@@ -26,5 +26,6 @@ urlpatterns = [
     path('logout/', logout, name='logout'),
     path('search/', search, name='search'),
     path('search/studentresult/', studentres, name='studentres'),
-    path('contact/', contact, name='contact')
+    path('contact/', contact, name='contact'),
+    path("admin_login/", admin_login, name='admin_login')
 ]

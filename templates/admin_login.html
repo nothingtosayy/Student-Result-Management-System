@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    <link rel="shortcut icon" href="{% static 'favicon-32x32.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'favicon-32x32.png' %}" type="image/x-icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+{% block content %}
+    <nav class="navbar navbar-light " style="background-color: aquamarine">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/">Home</a>
+    </div>
+    </nav>
+    <br>
+<form action="" method="post">
+{% csrf_token %}
+    <div class="container">
+         <div class="form-group">
+             <label for="exampleInputusername" class="form-label">Enter StudentName</label>
+             <input class="form-control" type="text" name="name" id="exampleInputusername" placeholder="Name"><br>
+         </div>
+
+        <div class="form-group">
+             <label for="exampleInputrollno" class="form-label">Enter Roll No</label>
+             <input class="form-control" type="number" name="RollNo" id="exampleInputrollno" placeholder="Roll No"><br>
+         </div>
+
+         <div class="form-group">
+             <label for="exampleInputsemester" class="form-label">Enter Semester</label>
+             <input class="form-control" type="text" name="semester" id="exampleInputsemester" placeholder="Semester"><br>
+         </div>
+
+         <div class="form-group">
+             <label for="exampleInputspi" class="form-label">Enter SPI</label>
+             <input class="form-control" type="number" name="SPI" id="exampleInputspi" placeholder="SPI" step="0.01"><br>
+         </div>
+
+         <div class="form-group">
+             <label for="exampleInputcpi" class="form-label">Enter CPI</label>
+             <input class="form-control" type="number" name="CPI" id="exampleInputcpi" placeholder="CPI" step="0.01"><br>
+         </div>
+
+        <input type="submit" value="Submit">
+                </div>
+</form>
+
+
+{% endblock %}
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+</body>
+</html>

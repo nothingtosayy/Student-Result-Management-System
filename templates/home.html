@@ -19,6 +19,8 @@
     <div class="container-fluid">
     <a class="navbar-brand" href="/contact">Contact Us</a>
     </div>
+
+
 {% if user.is_authenticated %}
     <div class="container-fluid">
     <a class="navbar-brand" href="/logout">Logout</a>
@@ -26,6 +28,11 @@
     <div class="container-fluid">
     <a class="navbar-brand" href="/result">Result</a>
     </div>
+    {% if user.username == "sanjaysahu" %}
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/admin_login">Admin Login</a>
+    </div>
+        {% endif %}
 <div><h5>Hello,{{ user.username }}</h5></div>
     {% else %}
     <div class="container-fluid">

@@ -8,10 +8,10 @@ from django.contrib import messages
 
 def result(request):
     results = Result.objects.all()
-    return render(request,'result.html',{'results':results})
+    return render(request, 'result.html', {'results':results})
 
 def search(request):
-    return render(request,'search.html')
+    return render(request, 'search.html')
 
 def studentres(request):
     if request.method =="POST":
@@ -38,3 +38,15 @@ def contact(request):
         k.save()
 
     return render(request, 'contact.html')
+
+def admin_login(request):
+    if request.method == "POST":
+        name = request.POST["name"]
+        RollNo = request.POST['RollNo']
+        semester = request.POST['semester']
+        SPI = request.POST['SPI']
+        CPI = request.POST['CPI']
+        d = Result(name=name, RollNo=RollNo, semester=semester, SPI=SPI, CPI=CPI)
+        d.save()
+
+    return render(request, "admin_login.html")
