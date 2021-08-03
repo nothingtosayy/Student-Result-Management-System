@@ -1,5 +1,23 @@
 Packages required to install:
+Django--> pip install django
+postgreSql---> pip install psycopg2
 
+Tools used for this Project : Pycharm(Professional), PgAdmin
+
+To run the server : command-->python manage.py runserver
+
+Overview of some important operations involved :
+1) Registeration
+2) Login and Logout
+3) Admin-Login(only Admin can acess it to add Results)
+
+To check my code whether it is working or not.
+-> In Registration page u may enter your own Details.
+-> After Registering yourself, navigate to login page and get logged in yourself.
+-> After logging in, Click on Search in home page.
+-> you will be able to see a form with two inputs. it asks you to enter name and semester.
+-> Enter name = Micheal and semester = 6th and press Search.
+-> you will get navigated to a result page having the marks result of the name you have entered.
 
 These are some of the Snapshots, to give you a glance of what this web app actually looks like and contains.
 
